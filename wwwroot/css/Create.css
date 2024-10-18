@@ -1,93 +1,107 @@
-﻿<link rel="stylesheet" href="~/css/Create.css" asp-append-version="true" / >
-/* General Styling */
+﻿/* General Styling */
+/* Sets the background color and font for the entire page */
 body {
-    background-color: #f0f4f8;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #333;
+    background-color: #f0f4f8; /* Light blue background for a calm, clean appearance */
+    font-family: 'Arial', sans-serif; /* Arial font for readability */
+    margin: 0; /* Removes default browser margin */
+    padding: 20px; /* Adds space around the content */
+    color: #333; /* Dark gray text for readability */
 }
 
 /* Centering the Form */
+/* Uses flexbox to center the form both vertically and horizontally */
 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height for centering */
+    display: flex; /* Flexbox layout for easy alignment */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Full viewport height to center the form perfectly */
 }
 
+/* Styling the form container */
+/* Styles the form box with padding, shadow, and rounded corners */
 .col-md-4 {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    background-color: #fff; /* White background for the form box */
+    padding: 30px; /* Space inside the form box */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Limits the width of the form */
+    width: 100%; /* Makes the form responsive to smaller screens */
 }
 
 /* Form Heading */
+/* Styles the form heading with blue color and spacing */
 h2 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+    text-align: center; /* Centers the heading */
+    color: #007bff; /* Blue color to match branding */
+    margin-bottom: 15px; /* Space below the heading */
+    font-size: 1.8rem; /* Large font for visibility */
 }
 
 /* Form Controls */
+/* Adds spacing and positioning to form inputs */
 .form-floating {
-    margin-bottom: 15px;
-    position: relative;
+    margin-bottom: 15px; /* Space between input fields */
+    position: relative; /* Allows positioning of labels within the input */
 }
 
+/* Styling the input fields */
+/* Adds padding, border, and rounded corners to the input fields */
 input.form-control {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    width: 100%; /* Input takes full width of the container */
+    padding: 10px; /* Space inside the input field */
+    font-size: 1rem; /* Standard font size for input */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Styling the labels */
+/* Positions the labels within the input field */
 label {
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    background-color: #fff;
-    padding: 0 5px;
-    font-size: 0.9rem;
-    color: #666;
+    position: absolute; /* Positions label over the input */
+    top: -5px; /* Adjusts the label's vertical position */
+    left: 10px; /* Adjusts the label's horizontal position */
+    background-color: #fff; /* White background for label */
+    padding: 0 5px; /* Padding inside the label */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #666; /* Light gray text color */
 }
 
 /* Validation Summary and Messages */
+/* Styles error messages */
 .text-danger {
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 0.9rem; /* Slightly smaller font size for errors */
+    margin-top: 5px; /* Space above the error message */
 }
 
 /* Button Styling */
+/* Styles the form submit button */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%; /* Button takes full width of the container */
+    padding: 10px; /* Space inside the button */
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default button border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
 }
 
+    /* Button Hover Effect */
+    /* Changes button color when hovered */
     button:hover {
-        background-color: #0056b3;
+        background-color: #0056b3; /* Darker blue on hover */
     }
 
 /* Responsive Design */
+/* Adjusts the layout for smaller screens */
 @media (max-width: 768px) {
     .col-md-4 {
-        width: 90%;
-        padding: 20px;
+        width: 90%; /* Adjusts form width for smaller screens */
+        padding: 20px; /* Reduces padding on smaller screens */
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Reduces heading size for smaller screens */
     }
 }
