@@ -1,22 +1,37 @@
+/* Set Default Font Size */
+/* Adjusts the base font size for the entire HTML document */
 html {
-  font-size: 14px;
+    font-size: 14px; /* Default font size for small screens */
 }
 
+/* Media Query for Larger Screens */
+/* Increases the font size for better readability on larger devices */
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px; /* Larger font size for tablets and desktops */
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* Focus and Active States for Buttons and Form Elements */
+/* Adds a focused outline effect on interactive elements */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, /* Inner shadow with a subtle white outline */
+    0 0 0 0.25rem #258cfb; /* Outer shadow with a blue outline for focus */
 }
 
+/* HTML Element Styling */
+/* Ensures the HTML content spans the entire viewport height */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative; /* Allows positioning of child elements */
+    min-height: 100%; /* Ensures the content covers the full height */
 }
 
+/* Body Element Styling */
+/* Adds space at the bottom of the page to accommodate content */
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px; /* Adds 60px margin at the bottom for spacing */
 }

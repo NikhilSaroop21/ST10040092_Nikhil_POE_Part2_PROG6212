@@ -1,85 +1,96 @@
 ﻿/* General Styling */
-
-
+/* Styles the heading for consistency and emphasis */
 h2 {
-    text-align: center;
-    color: #007bff;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    text-align: center; /* Centers the heading */
+    color: deeppink; /* Blue color for branding */
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 2rem; /* Sets a large font size for visibility */
 }
 
 /* Form Styling */
+/* Centers the form and adds padding, shadow, and rounded corners */
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-   
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limits the width for readability */
+    margin: 0 auto; /* Centers the form horizontally */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+    /* Adds spacing between form elements */
     form div {
-        margin-bottom: 15px;
+        margin-bottom: 15px; /* Space below each input field */
     }
 
+/* Label Styling */
+/* Styles labels for better visibility and structure */
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+    display: block; /* Forces labels to appear on their own line */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 5px; /* Adds space below the label */
+    color: #333; /* Dark gray text color */
 }
 
+/* Input and Textarea Styling */
+/* Styles text inputs, number inputs, and text areas for consistency */
 input[type="text"],
 input[type="number"],
 textarea,
 input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    width: 100%; /* Makes inputs full-width */
+    padding: 10px; /* Adds space inside inputs */
+    margin-top: 5px; /* Adds space above the input */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Standard font size for readability */
 }
 
+/* Textarea Specific Styling */
+/* Allows resizing of the textarea vertically only */
 textarea {
-    resize: vertical;
-    height: 100px;
+    resize: vertical; /* Only resizable vertically */
+    height: 100px; /* Default height for the textarea */
 }
 
 /* Error Styling */
+/* Styles error messages with red color for better visibility */
 .text-danger span {
-    color: #dc3545;
-    font-size: 0.9rem;
+    color: #dc3545; /* Red color for error messages */
+    font-size: 0.9rem; /* Slightly smaller font size */
 }
 
 /* Button Styling */
+/* Styles the submit button with padding, color, and hover effects */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: brown;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 100%; /* Full-width button */
+    padding: 10px; /* Adds space inside the button */
+    background-color: darkgreen; /* Brown background color */
+    color: white; /* White text color for contrast */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
+    /* Button Hover Effect */
+    /* Changes button color on hover */
     button:hover {
-        background-color: darkorange;
+        background-color:deeppink; /* Dark orange color on hover */
     }
 
 /* Responsive Design */
+/* Adjusts the layout for smaller screens */
 @media (max-width: 768px) {
     form {
-        padding: 20px;
+        padding: 20px; /* Adds padding inside the form */
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Slightly smaller heading for smaller screens */
     }
 
     button {
-        font-size: 1rem;
+        font-size: 1rem; /* Reduces button font size on smaller screens */
     }
 }

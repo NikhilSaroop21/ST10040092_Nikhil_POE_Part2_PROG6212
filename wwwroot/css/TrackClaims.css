@@ -3,7 +3,7 @@
 
 h2 {
     text-align: center;
-    color: #007bff;
+    color:darkgreen;
     margin-bottom: 20px;
     font-size: 2rem;
 }
@@ -24,7 +24,7 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color:darkgreen;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -41,7 +41,7 @@ tr:hover {
 
 /* Button Styling */
 button {
-    background-color: #dc3545;
+    background-color: deeppink;
     color: white;
     border: none;
     padding: 10px 20px;

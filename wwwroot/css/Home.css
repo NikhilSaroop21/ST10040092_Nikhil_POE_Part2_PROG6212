@@ -1,167 +1,194 @@
-﻿﻿ /* General Styles */
+﻿/* General Styles */
+/* Sets the background color, text properties, and layout for the entire page */
 body {
-    background-color:red ;
-    background-size: cover;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color:; /* Red background to make the page stand out */
+    background-size: cover; /* Ensures background covers the entire page */
+    color: #333; /* Dark gray text for readability */
+    font-family: 'Arial', sans-serif; /* Arial font for consistent, clean text */
+    line-height: 1.6; /* Increases line spacing for readability */
+    text-align: center; /* Centers text content */
+    margin: 0; /* Removes default browser margins */
+    padding: 0; /* Removes default browser padding */
+    display: flex; /* Flexbox layout to control alignment */
+    flex-direction: column; /* Stacks elements vertically */
+    min-height: 100vh; /* Ensures full viewport height */
 }
 
 /* Hero Section */
+/* Styles the main hero section to grab user attention */
 .hero {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: blacj;
+    height: 50vh; /* Uses half the viewport height */
+    display: flex; /* Flexbox to center content */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Aligns text in the center */
+    color: black; /* Fix typo (was "blacj") for text visibility */
 }
 
+/* Hero Content */
+/* Styles the container holding the hero text and background */
 .hero-content {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    max-width: 1000px; /* Limits the width for readability */
+    margin: auto; /* Centers the content */
+    padding: 20px; /* Adds space inside the content */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+/* Hero Heading */
 .hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 3em; /* Large font size for attention */
+    margin-bottom: 20px; /* Space below the heading */
 }
 
+/* Hero Paragraph */
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.2em; /* Slightly larger text */
+    margin-bottom: 30px; /* Space below the paragraph */
 }
 
 /* Button Styles */
+/* Base styling for buttons */
 .btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 1.2em;
-    transition: all 0.3s ease;
+    display: inline-block; /* Makes button behave like an inline element */
+    text-decoration: none; /* Removes underline from links */
+    padding: 15px 30px; /* Adds padding inside the button */
+    border-radius: 30px; /* Fully rounded corners */
+    font-size: 1.2em; /* Increases font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hero Button */
+/* Styles for the primary button in the hero section */
 .btn-hero {
-    background: indigo;
-    color: white;
-    border: 2.4px solid #fff;
+    background: indigo; /* Indigo background */
+    color: white; /* White text for contrast */
+    border: 2.4px solid #fff; /* White border */
 }
 
+    /* Hover Effect for Hero Button */
     .btn-hero:hover {
-        background-color: darkmagenta;
-        font-weight:bold;
-        
+        background-color: darkmagenta; /* Changes background on hover */
+        font-weight: bold; /* Makes text bold */
     }
 
 /* General Button */
+/* Styles for secondary buttons */
 .btn1 {
-    background-color: darkcyan;
-    color: white;
-    border: 1px solid black;
+    background-color: darkcyan; /* Dark cyan background */
+    color: white; /* White text */
+    border: 1px solid black; /* Thin black border */
 }
 
+    /* Hover Effect for General Button */
     .btn1:hover {
-        background: crimson;
-        color: #fff;
-        border: 4px solid black;
-        transform: translateY(-3px);
+        background: crimson; /* Changes to crimson on hover */
+        color: #fff; /* White text */
+        border: 4px solid black; /* Thicker border */
+        transform: translateY(-3px); /* Slight upward shift on hover */
     }
 
 /* Grid Layout */
+/* Styles for a responsive grid layout */
 .grid-container {
-    background: #fff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-    gap: 20px;
-    padding: 50px;
+    background: #fff; /* White background for the grid */
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr)); /* Auto-fit columns */
+    gap: 20px; /* Space between grid items */
+    padding: 50px; /* Adds padding around the grid */
 }
 
+/* Section Images */
+/* Styles for images within sections */
 .section-image {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Makes images responsive */
+    border-radius: 10px; /* Rounded corners */
 }
 
 /* Text Styling */
+/* Styles headings for consistency */
 h2, h3 {
-    margin: 10px 0;
-    font-family: 'Georgia', serif;
+    margin: 10px 0; /* Space above and below headings */
+    font-family: 'Georgia', serif; /* Georgia font for a more formal look */
 }
 
-
-/* Hero Section */
+/* Hero Section Paragraph */
+/* Additional styling for hero section text */
 .hero p {
-    font-style: italic; /* Same as testimonials */
-    margin-bottom: 20px;
-    color: black; /* Ensure the text is readable on the dark background */
+    font-style: italic; /* Italic text for emphasis */
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: black; /* Ensures text is readable */
 }
 
-/* Main Content */
+/* Main Content Paragraph */
+/* Styles for general paragraphs in the main content */
 main p {
-    font-style: italic; /* Same as testimonials */
-    color: #333; /* Dark text color for readability on white background */
+    font-style: italic; /* Matches the style of testimonials */
+    color: #333; /* Dark gray for readability */
 }
 
-
+/* General Paragraph Styling */
 p {
-    font-size: 1em;
-    padding: 1em 0;
+    font-size: 1em; /* Standard font size */
+    padding: 1em 0; /* Adds padding inside paragraphs */
 }
 
 /* Testimonials Section */
+/* Styles for the testimonials section */
 .testimonials {
-    padding: 50px;
-    background-color: white;
+    padding: 50px; /* Padding around the section */
+    background-color: white; /* White background */
 }
 
+/* Testimonial Grid */
+/* Layout for the testimonials */
 .testimonial-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Flex layout for the grid */
+    justify-content: space-around; /* Spacing between testimonials */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+/* Testimonial Item */
+/* Styling for individual testimonials */
 .testimonial {
-    max-width: 30%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    max-width: 30%; /* Limits width of each testimonial */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px; /* Space inside the testimonial */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: left; /* Aligns text to the left */
 }
 
+    /* Testimonial Paragraph */
+    /* Styles for testimonial text */
     .testimonial p {
-        font-style: italic;
+        font-style: italic; /* Italic for emphasis */
     }
 
+    /* Testimonial Author */
+    /* Styles for the author's name */
     .testimonial h4 {
-        margin-top: 10px;
-        font-weight: bold;
-        color: #555;
+        margin-top: 10px; /* Space above the author name */
+        font-weight: bold; /* Bold text */
+        color: #555; /* Dark gray color */
     }
 
 /* Footer Section */
+/* Styles for the footer */
 .footer {
-    color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: #f9f9f9; /* Light text color */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Space inside the footer */
+    position: relative; /* Positioned relative to other elements */
+    bottom: 0; /* Sticks to the bottom of the page */
+    width: 100%; /* Full width */
 }
+
+/* Code Attribution */
+/* Attribution to the source of inspiration */
+
 
 // code attribution
 // W3schools

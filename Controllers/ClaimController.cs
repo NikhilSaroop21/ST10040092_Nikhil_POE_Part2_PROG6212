@@ -37,7 +37,7 @@ public class ClaimsController : Controller
             var fileExtension = Path.GetExtension(document.FileName).ToLower();
             if (!_allowedExtensions.Contains(fileExtension))
             {
-                ModelState.AddModelError("document", "Invalid file type. Only PDF, DOCX, and XLSX files are allowed.");
+                ModelState.AddModelError("document", "Invalid file type. Only  a PDF, DOCX, and XLSX files are allowed.");
                 return View(claim);
             }
 
@@ -57,7 +57,7 @@ public class ClaimsController : Controller
         }
         else
         {
-            ModelState.AddModelError("document", "Please upload a supporting document.");
+            ModelState.AddModelError("document", "Please upload an supporting document.");
             return View(claim);
         }
 
@@ -86,7 +86,7 @@ public class ClaimsController : Controller
         }
         catch (Exception ex)
         {
-            ModelState.AddModelError(string.Empty, "An error occurred while fetching the claims. Please try again later.");
+            ModelState.AddModelError(string.Empty, "An error  has occurred while fetching the claims. Please try again later.");
             Console.WriteLine(ex.Message);
             return View("Error");
         }
@@ -107,12 +107,12 @@ public class ClaimsController : Controller
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Claim not found.");
+                ModelState.AddModelError(string.Empty, "Claim was not found.");
             }
         }
         catch (Exception ex)
         {
-            ModelState.AddModelError(string.Empty, "An error occurred while approving the claim. Please try again.");
+            ModelState.AddModelError(string.Empty, "An error has occurred while approving the claim. Please try again.");
             Console.WriteLine(ex.Message);
         }
         return RedirectToAction("ViewPendingClaims");
@@ -133,12 +133,12 @@ public class ClaimsController : Controller
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Claim not found.");
+                ModelState.AddModelError(string.Empty, "Claim was not found.");
             }
         }
         catch (Exception ex)
         {
-            ModelState.AddModelError(string.Empty, "An error occurred while rejecting the claim. Please try again.");
+            ModelState.AddModelError(string.Empty, "An error has occurred while rejecting the claim. Please try again.");
             Console.WriteLine(ex.Message);
         }
         return RedirectToAction("ViewPendingClaims");
@@ -156,7 +156,7 @@ public class ClaimsController : Controller
         }
         catch (Exception ex)
         {
-            ModelState.AddModelError(string.Empty, "An error occurred while fetching the claims. Please try again later.");
+            ModelState.AddModelError(string.Empty, "An error has occurred while fetching the claims. Please try again later.");
             Console.WriteLine(ex.Message);
             return View("Error");
         }
@@ -175,7 +175,7 @@ public class ClaimsController : Controller
         }
         else
         {
-            ModelState.AddModelError(string.Empty, "Claim not found.");
+            ModelState.AddModelError(string.Empty, "Claim was not found.");
             return View("Error");
         }
     }

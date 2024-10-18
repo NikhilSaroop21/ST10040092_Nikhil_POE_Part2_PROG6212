@@ -1,55 +1,70 @@
 ﻿/* General Styling */
-
-
+/* Styles the container to center content and add visual appeal */
 .container {
-    max-width: 800px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limits the width of the container for readability */
+    background-color: #fff; /* White background for contrast */
+    padding: 40px; /* Adds space inside the container */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Main Heading (h1) */
+/* Styles the main heading to make it stand out */
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #007bff;
-    text-align: center;
+    font-size: 2.5rem; /* Large font size for visibility */
+    margin-bottom: 20px; /* Space below the heading */
+    color: darkblue; /* Blue color for branding */
+    text-align: center; /* Centers the heading */
 }
 
+/* Sub Heading (h2) */
+/* Styles secondary headings for consistency */
 h2 {
-    font-size: 1.8rem;
-    margin: 15px 0;
-    color: #0056b3;
+    font-size: 1.8rem; /* Slightly smaller font size than main heading */
+    margin: 15px 0; /* Space above and below the subheading */
+    color: #0056b3; /* Darker blue for differentiation */
 }
 
+/* Paragraphs (p) */
+/* Styles the paragraphs to ensure readability */
 p {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    text-align: justify;
+    margin: 10px 0; /* Space above and below each paragraph */
+    font-size: 1.1rem; /* Slightly larger text for easier reading */
+    text-align: justify; /* Justifies the text for a clean look */
 }
 
+/* Unordered Lists (ul) */
+/* Adds spacing to lists for better structure */
 ul {
-    margin: 10px 0;
-    padding-left: 20px;
+    margin: 10px 0; /* Space above and below the list */
+    padding-left: 20px; /* Indents the list from the left */
 }
 
+    /* List Items (li) */
+    /* Styles individual list items */
     ul li {
-        margin: 8px 0;
+        margin: 8px 0; /* Space between list items */
     }
 
+/* Anchor Links (a) */
+/* Adds styling for links */
 a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Removes the underline from links */
+    transition: color 0.3s; /* Smooth color change on hover */
 }
 
+    /* Hover Effect for Links */
+    /* Changes the color of links when hovered */
     a:hover {
-        color: #0056b3;
+        color: #0056b3; /* Darker blue on hover */
     }
 
+/* Footer Styling */
+/* Styles the footer to appear at the bottom with small text */
 .footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #666;
+    text-align: center; /* Centers the footer text */
+    margin-top: 20px; /* Space above the footer */
+    font-size: 0.9rem; /* Slightly smaller text size */
+    color: #666; /* Light gray text color */
 }
