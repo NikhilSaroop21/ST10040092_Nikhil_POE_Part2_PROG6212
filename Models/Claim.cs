@@ -5,39 +5,53 @@ namespace ST10040092_Nikhil_POE_Part2_PROG6212.Models
 {
 	public class Claim
 	{
-		// Primary Key
-		[Key] // Marks ClaimId as the primary key for the Claim table
-		public int ClaimId { get; set; } // Unique identifier for each claim
 
-		// Lecturer Name (Required Field)
-		[Required] // Ensures that the LecturerName is mandatory
-		public string LecturerName { get; set; } // Stores the name of the lecturer submitting the claim
+        // Primary key for the Claim entity.
+        [Key]
+        public int ClaimId { get; set; }
 
-		// Hours Worked (Required and Range Validation)
-		[Required] // Marks HoursWorked as a required field
-		[Range(0, double.MaxValue)] // Ensures the value is non-negative
-		public double HoursWorked { get; set; } // Stores the number of hours worked
+        // Stores the name of the lecturer submitting the claim.
+        // This field is required and will be displayed as 'Lecturer' on the form.
+        [Required]
+        [Display(Name = "Lecturer")]
+        public string LecturerName { get; set; }
+
+        // Number of hours worked for the claim.
+        // This field is required and must be a non-negative value.
+        [Required]
+        [Range(0, double.MaxValue)]
+        public double HoursWorked { get; set; }
+
+        // Hourly rate for the claim.
+        // This field is required and must be a non-negative value.
+        [Required]
+        [Range(0, double.MaxValue)]
+        public double HourlyRate { get; set; }
+
+        // Calculate FinalPayment dynamically
+        public decimal FinalPayment
+        {
+            get
+            {
+                return (decimal)(HoursWorked * HourlyRate);
+            }
+        }
+        [Display(Name = "Additional Notes")]
+        public string Notes { get; set; }
+
+        // Status of the claim (e.g., 'Pending', 'Approved', or 'Rejected').
+        // Default value is 'Pending'. This field is required.
+        [Required]
+        public string Status { get; set; } = "Pending";
 
 
+        public string? DeclinedReason { get; set; }
 
+        // Path to the supporting document uploaded for the claim.
+        // This field is required and stores the location of the uploaded file.
+        [Required]
+        public string? DocumentPath { get; set; }
 
-		// Hourly Rate (Required and Range Validation)
-		[Required] // Marks HourlyRate as a required field
-		[Range(0, double.MaxValue)] // Ensures the rate is non-negative
-		public double HourlyRate { get; set; } // Stores the hourly rate for the lecturer
-
-
-
-
-		// Additional Notes (Optional)
-		public string Notes { get; set; } // Stores optional notes related to the claim
-
-		// Claim Status (Required with Default Value)
-		[Required] // Ensures Status is mandatory
-		public string Status { get; set; } = "Stand By"; // Default status is "Stand By"
-
-		// Document Path (Required)
-		[Required] // Ensures that a document path is provided
-		public string? DocumentPath { get; set; } // Stores the file path of the uploaded document (nullable)
-	}
+        public string UserId { get; set; }
+    }
 }
